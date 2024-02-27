@@ -22,4 +22,9 @@
         </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\Module1_Result\Module1_Result.csproj" />
+      <ProjectReference Include="..\..\src\SharedKernel\SharedKernel.csproj" />
+    </ItemGroup>
+
 </Project>

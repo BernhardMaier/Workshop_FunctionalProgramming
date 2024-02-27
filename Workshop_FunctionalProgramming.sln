@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module2_Maybe.Tests", "test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module3_Fluent.Tests", "tests\Module3_Fluent.Tests\Module3_Fluent.Tests.csproj", "{6ADAA6F7-C272-4028-A0C0-C90BF376103E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedKernel", "src\SharedKernel\SharedKernel.csproj", "{2E0F8818-44AA-466C-A9D1-E07B28053ABC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{6ADAA6F7-C272-4028-A0C0-C90BF376103E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ADAA6F7-C272-4028-A0C0-C90BF376103E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ADAA6F7-C272-4028-A0C0-C90BF376103E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0F8818-44AA-466C-A9D1-E07B28053ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0F8818-44AA-466C-A9D1-E07B28053ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0F8818-44AA-466C-A9D1-E07B28053ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0F8818-44AA-466C-A9D1-E07B28053ABC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
