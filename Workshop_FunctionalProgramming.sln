@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Results", "Results\Results.csproj", "{345ACED0-5201-4936-BFF1-D0F995F215C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Results", "tests\Results\Results.csproj", "{345ACED0-5201-4936-BFF1-D0F995F215C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluent", "Fluent\Fluent.csproj", "{2E65B8A3-7C39-4697-A685-D0268AC2AC59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluent", "tests\Fluent\Fluent.csproj", "{2E65B8A3-7C39-4697-A685-D0268AC2AC59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maybes", "Maybes\Maybes.csproj", "{86071050-5A6D-4DEC-8F41-260A4878EF6D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maybes", "tests\Maybes\Maybes.csproj", "{86071050-5A6D-4DEC-8F41-260A4878EF6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Playground.csproj", "{5770A34B-3DD9-47E2-B19D-059FB92B769A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "tests\Playground\Playground.csproj", "{5770A34B-3DD9-47E2-B19D-059FB92B769A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

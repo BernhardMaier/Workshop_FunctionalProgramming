@@ -1,6 +1,6 @@
 # PDFs
-- [Presentation](Workshop_Presentation.pdf)
-- [Cheat Sheet](Workshop_CheatSheet.pdf)
+- [Presentation](docs/Workshop_Presentation.pdf)
+- [Cheat Sheet](docs/Workshop_CheatSheet.pdf)
 
 # Synonyms
 - Result (/ Either)
