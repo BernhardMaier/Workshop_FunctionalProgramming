@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluent", "Fluent\Fluent.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maybes", "Maybes\Maybes.csproj", "{86071050-5A6D-4DEC-8F41-260A4878EF6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Playground.csproj", "{5770A34B-3DD9-47E2-B19D-059FB92B769A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{86071050-5A6D-4DEC-8F41-260A4878EF6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86071050-5A6D-4DEC-8F41-260A4878EF6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86071050-5A6D-4DEC-8F41-260A4878EF6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5770A34B-3DD9-47E2-B19D-059FB92B769A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5770A34B-3DD9-47E2-B19D-059FB92B769A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5770A34B-3DD9-47E2-B19D-059FB92B769A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5770A34B-3DD9-47E2-B19D-059FB92B769A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
