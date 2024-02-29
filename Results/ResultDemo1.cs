@@ -5,8 +5,13 @@ public class ResultDemo1(ITestOutputHelper testOutputHelper)
   [Fact]
   public void Test()
   {
-    Print("Hello World!");
-    Print(null);
+    var res1 = Print_Fixed("Hello World!");
+    if (res1.IsFailure)
+      testOutputHelper.WriteLine(res1.Error);
+    
+    var res2 = Print_Fixed(null);
+    if (res2.IsFailure)
+      testOutputHelper.WriteLine(res2.Error);
   }
 
   private void Print(string? s)

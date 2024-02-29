@@ -1,27 +1,37 @@
+using CSharpFunctionalExtensions.ValueTasks;
+
 namespace Maybes;
 
 public class MaybeDemo1(ITestOutputHelper testOutputHelper)
 {
-  private readonly Dictionary<int, string> _dictionary = new();
+  private readonly Dictionary<string, string> _dictionary = new();
   
   [Fact]
   public void Test()
   {
-    _dictionary.Add(1, "Hello");
-    _dictionary.Add(2, "World");
-    _dictionary.Add(3, "!");
+    _dictionary.Add("1", "Hello");
+    _dictionary.Add("2", "World");
+    _dictionary.Add("3", "!");
 
-    var id = 1;
-    var value = GetValueById_Bugged(id);
-    testOutputHelper.WriteLine($"Id '{id}' has value '{value}' with length {value.Length}");
+    string id = "4";
+    var value = GetValueById_DefinitelyFixed(id);
+    if (value.HasNoValue)
+    {
+      testOutputHelper.WriteLine("Not Found");
+    }
+    else
+    {
+      var res = value.GetValueOrDefault(string.Empty);
+      testOutputHelper.WriteLine($"Id '{id}' has value '{res}' with length {res.Length}");
+    }
   }
 
-  private string GetValueById_Bugged(int id)
+  private string GetValueById_Bugged(string id)
   {
     return _dictionary[id];
   }
 
-  private string GetValueById_MaybeFixed(int id)
+  private string GetValueById_MaybeFixed(string id)
   {
     if (id == null)
     {
@@ -31,7 +41,7 @@ public class MaybeDemo1(ITestOutputHelper testOutputHelper)
     return _dictionary[id];
   }
 
-  private Maybe<string> GetValueById_DefinitelyFixed(int id)
+  private Maybe<string> GetValueById_DefinitelyFixed(string id)
   {
     if (id == null)
     {

@@ -5,17 +5,20 @@ public class ResultDemo3(ITestOutputHelper testOutputHelper)
   [Fact]
   public void Test()
   {
-    var customer = new Customer(18);
+    var customerResult = Customer_DefinitelyFixed.Create(-2);
+    if (customerResult.IsFailure)
+    {
+      testOutputHelper.WriteLine(customerResult.Error);
+      return;
+    }
     
-    testOutputHelper.WriteLine(customer.Age.ToString());
+    testOutputHelper.WriteLine(customerResult.Value.Age.ToString());
   }
 
   private class Customer
   {
-    public Customer(int age)
-    {
+    public Customer(int age) =>
       Age = age;
-    }
 
     public int Age { get; set; }
   }
@@ -25,9 +28,7 @@ public class ResultDemo3(ITestOutputHelper testOutputHelper)
     public Customer_MaybeFixed(int age)
     {
       if (age < 0)
-      {
         throw new ArgumentException("Age must not be negative!", nameof(age));
-      }
       
       Age = age;
     }
@@ -37,17 +38,13 @@ public class ResultDemo3(ITestOutputHelper testOutputHelper)
 
   private class Customer_DefinitelyFixed
   {
-    private Customer_DefinitelyFixed(int age)
-    {
+    private Customer_DefinitelyFixed(int age) =>
       Age = age;
-    }
 
     public static Result<Customer_DefinitelyFixed> Create(int age)
     {
       if (age < 0)
-      {
         return Result.Failure<Customer_DefinitelyFixed>("Age must not be negative!");
-      }
 
       return new Customer_DefinitelyFixed(age);
     }

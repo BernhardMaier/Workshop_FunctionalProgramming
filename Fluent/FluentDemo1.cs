@@ -6,7 +6,7 @@ public class FluentDemo1(ITestOutputHelper testOutputHelper)
   public void Test()
   {
     var words = new[] { "Hello", "World", "!" };
-    var lengths = GetLengths(words);
+    var lengths = GetLengths_Short(words);
     
     testOutputHelper.WriteLine(string.Join(',', lengths));
   }
@@ -23,8 +23,10 @@ public class FluentDemo1(ITestOutputHelper testOutputHelper)
     return list;
   }
 
-  private static List<int> GetLengths_Short(IEnumerable<string> words)
+  private static IEnumerable<int> GetLengths_Short(IEnumerable<string> words)
   {
-    return words.Select(t => t.Length).ToList();
+    return words
+      .Select(t => t.Length)
+      .ToList();
   }
 }
