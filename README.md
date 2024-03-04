@@ -24,3 +24,11 @@
 - [How to use fluent interfaces and method chaining in C# (InfoWorld)](https://www.infoworld.com/article/3572598/how-to-use-fluent-interfaces-and-method-chaining-in-csharp.html)
 - [Fluent Interface (Wikipedia)](https://en.wikipedia.org/wiki/Fluent_interface)
 - [Method Chaining (Wikipedia)](https://en.wikipedia.org/wiki/Method_chaining)
+
+# Code Samples
+
+![Create Customer](docs/images/2024-03-04%2011_30_25-Window.png)
+![Create Customer](docs/images/2024-03-04%2011_31_14-Window.png)
+![Create Customer](docs/images/2024-03-04%2011_32_31-Window.png)
+![Create Customer](docs/images/2024-03-04%2011_33_35-Window.png)
+![Create Customer](docs/images/2024-03-04%2011_34_20-Window.png)
